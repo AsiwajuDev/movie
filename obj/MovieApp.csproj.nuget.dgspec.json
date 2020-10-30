@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\MovieApp\\MovieApp.csproj": {}
+    "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\movie\\MovieApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\MovieApp\\MovieApp.csproj": {
+    "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\movie\\MovieApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\MovieApp\\MovieApp.csproj",
+        "projectUniqueName": "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\movie\\MovieApp.csproj",
         "projectName": "MovieApp",
-        "projectPath": "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\MovieApp\\MovieApp.csproj",
+        "projectPath": "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\movie\\MovieApp.csproj",
         "packagesPath": "C:\\Users\\IfeanyiTavia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\MovieApp\\obj\\",
+        "outputPath": "C:\\Users\\IfeanyiTavia\\Documents\\Git\\.Net Core Solutions\\movie\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -42,6 +42,26 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
