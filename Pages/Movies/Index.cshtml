@@ -13,7 +13,10 @@
 <form>
     <p>
         <input type="text" asp-for="SearchString" />
-        <select asp-for="MovieGenre" asp-items="Model.Genres">
+        Genre: <select asp-for="MovieGenre" asp-items="Model.Genres">
+            <option value="">All</option>
+        </select>
+        Rating: <select asp-for="RatingGenre" asp-items="Model.Ratings">
             <option value="">All</option>
         </select>
         <input type="submit" value="Filter" />
@@ -34,6 +37,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Movie[0].Price)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Rating)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -51,6 +57,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
