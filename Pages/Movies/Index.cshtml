@@ -13,10 +13,10 @@
 <form>
     <p>
         <input type="text" asp-for="SearchString" />
-        Genre: <select asp-for="MovieGenre" asp-items="Model.Genres">
+        Genre: <select class="ml-2" asp-for="MovieGenre" asp-items="Model.Genres">
             <option value="">All</option>
         </select>
-        Rating: <select asp-for="RatingGenre" asp-items="Model.Ratings">
+        Rating: <select class="ml-2" asp-for="RatingGenre" asp-items="Model.Ratings">
             <option value="">All</option>
         </select>
         <input type="submit" value="Filter" />
