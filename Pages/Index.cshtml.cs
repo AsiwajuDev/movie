@@ -17,9 +17,9 @@ namespace MovieApp.Pages
             _logger = logger;
         }
 
-        public void OnGet()
+        public RedirectToPageResult OnGet()
         {
-
+            return RedirectToPage("./Movies/Index");
         }
     }
 }
